@@ -1,15 +1,19 @@
 .navbar {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   background-color: #ddebf1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 3px solid black;
 }
 .navbar img {
   height: 100px;
   width: 100px;
-  object-fit: contain;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 .navbaritems {
   display: flex;
@@ -19,6 +23,7 @@
   width: 800px;
   align-items: center;
   justify-content: space-around;
+  font-weight: bold;
 }
 .navbaritems a {
   color: black;

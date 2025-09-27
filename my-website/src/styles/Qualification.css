@@ -1,0 +1,20 @@
+.qualities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  border: 3px solid black;
+  width: 80%; /* vagy fix width, pl. 600px */
+  table-layout: fixed; /* minden oszlop egyenlő szélességű */
+  text-align: center; /* középre igazítás */
+}
+
+th,
+td {
+  border: 3px solid blue;
+  padding: 10px; /* cellák belső térköze */
+  width: 33%; /* ha 3 oszlop van, így mindegyik egyenlő */
+}

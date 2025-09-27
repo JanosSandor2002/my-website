@@ -1,0 +1,50 @@
+.project {
+  margin-bottom: 60px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.project-item {
+  background-color: #edf6fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 60px;
+  width: 600px;
+  height: 600px;
+}
+.project-item img {
+  border-radius: 60px;
+  height: 400px;
+  width: 550px;
+}
+.project-item p {
+  font-size: 20px;
+  width: 500px;
+}
+.project-item a {
+  text-decoration: none;
+  color: inherit;
+}
+.hh {
+  text-align: center;
+}
+.hh:first-child {
+  margin-top: 210px;
+  text-align: center;
+}
+.hh:nth-child(2) {
+  text-align: center;
+  margin-bottom: 60px;
+}
+#projects {
+  scroll-margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+}
