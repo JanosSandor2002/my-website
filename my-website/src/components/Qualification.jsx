@@ -3,7 +3,7 @@ import '../styles/Qualification.css';
 const Qualification = () => {
   return (
     <div className='qualities' id='qualifications'>
-      <h1>qualification</h1>
+      <h1>Qualification</h1>
       <table>
         <tr>
           <th>1</th>

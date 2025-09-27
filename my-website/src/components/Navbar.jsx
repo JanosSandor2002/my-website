@@ -12,7 +12,9 @@ const Navbar = () => {
         <a href='#qualifications'>Qualifications</a>
         <a href='#contact'>Contact</a>
       </div>
-      <Navicons />
+      <div className='disable'>
+        <Navicons />
+      </div>
     </div>
   );
 };

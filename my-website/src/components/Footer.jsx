@@ -6,7 +6,9 @@ const Footer = () => {
   return (
     <div className='footer' id='contact'>
       <h1>Contact</h1>
-      <Navicons />
+      <div className='nav'>
+        <Navicons />
+      </div>
     </div>
   );
 };

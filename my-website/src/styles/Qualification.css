@@ -1,20 +1,159 @@
+/*min width 1440*/
 .qualities {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
+h1 {
+  margin-top: 60px;
+  font-size: 3rem;
+}
 table {
   border: 3px solid black;
-  width: 80%; /* vagy fix width, pl. 600px */
-  table-layout: fixed; /* minden oszlop egyenlő szélességű */
-  text-align: center; /* középre igazítás */
+  width: 80%;
+  table-layout: fixed;
+  text-align: center;
 }
-
 th,
 td {
   border: 3px solid blue;
-  padding: 10px; /* cellák belső térköze */
-  width: 33%; /* ha 3 oszlop van, így mindegyik egyenlő */
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 33%;
+}
+#qualifications {
+  scroll-margin-top: 150px;
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  h1 {
+    margin-top: 50px;
+    font-size: 2rem;
+  }
+  table {
+    border: 3px solid black;
+    width: 80%;
+    table-layout: fixed;
+    text-align: center;
+  }
+  th,
+  td {
+    border: 3px solid blue;
+    font-size: 1.25rem;
+    padding: 8px;
+    width: 33%;
+  }
+  #qualifications {
+    scroll-margin-top: 140px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  h1 {
+    margin-top: 40px;
+    font-size: 2rem;
+  }
+  table {
+    border: 3px solid black;
+    width: 80%;
+    table-layout: fixed;
+    text-align: center;
+  }
+  th,
+  td {
+    border: 3px solid blue;
+    font-size: 1.25rem;
+    padding: 8px;
+    width: 33%;
+  }
+  #qualifications {
+    scroll-margin-top: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+  table {
+    border: 3px solid black;
+    width: 80%;
+    table-layout: fixed;
+    text-align: center;
+  }
+  th,
+  td {
+    border: 3px solid blue;
+    font-size: 1rem;
+    padding: 5px;
+    width: 33%;
+  }
+  #qualifications {
+    scroll-margin-top: 150px;
+  }
+}
+@media (min-width: 600px) and (max-width: 767px) {
+  h1 {
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+  table {
+    border: 3px solid black;
+    width: 80%;
+    table-layout: fixed;
+    text-align: center;
+  }
+  th,
+  td {
+    border: 3px solid blue;
+    font-size: 1rem;
+    padding: 5px;
+    width: 33%;
+  }
+  #qualifications {
+    scroll-margin-top: 150px;
+  }
+}
+@media (min-width: 480px) and (max-width: 599px) {
+  h1 {
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+  table {
+    border: 3px solid black;
+    width: 80%;
+    table-layout: fixed;
+    text-align: center;
+  }
+  th,
+  td {
+    border: 3px solid blue;
+    font-size: 0.8rem;
+    padding: 3px;
+    width: 33%;
+  }
+  #qualifications {
+    scroll-margin-top: 100px;
+  }
+}
+@media (min-width: 320px) and (max-width: 479px) {
+  h1 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  table {
+    border: 2px solid black;
+    width: 80%;
+    table-layout: fixed;
+    text-align: center;
+  }
+  th,
+  td {
+    border: 3px solid blue;
+    font-size: 1rem;
+    padding: 5px;
+    width: 33%;
+  }
+  #qualifications {
+    scroll-margin-top: 100px;
+  }
 }
