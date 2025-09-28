@@ -10,6 +10,7 @@ h1 {
   font-size: 3rem;
 }
 table {
+  border-radius: 30px;
   border: 3px solid black;
   width: 80%;
   table-layout: fixed;
@@ -17,10 +18,22 @@ table {
 }
 th,
 td {
-  border: 3px solid blue;
+  background-color: #edf6fb;
   font-size: 1.5rem;
   padding: 10px;
   width: 33%;
+}
+th:first-child {
+  border-top-left-radius: 30px;
+}
+th:last-child {
+  border-top-right-radius: 30px;
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 30px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 30px;
 }
 #qualifications {
   scroll-margin-top: 150px;
@@ -38,11 +51,11 @@ td {
   }
   th,
   td {
-    border: 3px solid blue;
     font-size: 1.25rem;
     padding: 8px;
     width: 33%;
   }
+
   #qualifications {
     scroll-margin-top: 140px;
   }
@@ -60,7 +73,6 @@ td {
   }
   th,
   td {
-    border: 3px solid blue;
     font-size: 1.25rem;
     padding: 8px;
     width: 33%;
@@ -82,7 +94,6 @@ td {
   }
   th,
   td {
-    border: 3px solid blue;
     font-size: 1rem;
     padding: 5px;
     width: 33%;
@@ -104,7 +115,6 @@ td {
   }
   th,
   td {
-    border: 3px solid blue;
     font-size: 1rem;
     padding: 5px;
     width: 33%;
@@ -126,7 +136,6 @@ td {
   }
   th,
   td {
-    border: 3px solid blue;
     font-size: 0.8rem;
     padding: 3px;
     width: 33%;
@@ -148,7 +157,6 @@ td {
   }
   th,
   td {
-    border: 3px solid blue;
     font-size: 1rem;
     padding: 5px;
     width: 33%;
