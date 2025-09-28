@@ -9,7 +9,7 @@ export const websites = [
     id: 1,
     project_name: 'Backroads Project',
     project_img: backroads_img,
-    link: 'https://backroads-project-janossandor.netlify.app/',
+    link: 'https://janossandor2002.github.io/backroads-project/',
     project_details:
       'This project was aimed to practise modern web developing via an Udemy Course made by Janis Smilga',
   },
@@ -17,7 +17,7 @@ export const websites = [
     id: 2,
     project_name: 'X-factor Mentor Quiz',
     project_img: xfactor_img,
-    link: 'https://xfactor-mentor-quiz-janossandor.netlify.app/',
+    link: 'https://janossandor2002.github.io/xfactor-mentor-quiz-project/',
     project_details:
       'It was made for creating a quiz website, where by choices you get in reward a mentor from X factor Hungary.',
   },
