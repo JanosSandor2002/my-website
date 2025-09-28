@@ -53,7 +53,7 @@ export const technologies = [
     id: 1,
     technology: 'HTML',
     time: '2-3 months',
-    level: 'Junior',
+    level: 'Medior',
   },
   {
     id: 2,
@@ -64,14 +64,14 @@ export const technologies = [
   {
     id: 3,
     technology: 'Bootstrap',
-    time: '2-3 months',
+    time: '1-2 months',
     level: 'Junior',
   },
   {
     id: 4,
     technology: 'TailWind CSS',
-    time: '2-3 months',
-    level: 'Junior',
+    time: '0 months',
+    level: 'None',
   },
   {
     id: 5,
