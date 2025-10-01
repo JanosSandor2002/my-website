@@ -22,7 +22,7 @@ const Navicons = () => {
       >
         <img src={linkedinImage} alt='LinkedIn' />
       </a>
-      <a href='mailto:sandorj2002@email.com'>
+      <a href='mailto:sandorj2002@gmail.com'>
         <img src={gmailImage} alt='Email' />
       </a>
       <a href='tel:+36301116731'>
