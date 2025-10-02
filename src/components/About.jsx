@@ -9,7 +9,7 @@ const About = () => {
         My name is János Sándor, and I am currently a third-year Computer
         Science student at the Faculty of IT, Miskolc University. I chose this
         field because I have always been fascinated by the creative aspects of
-        programming – the ability to design, build, and optimize solutions from
+        programming - the ability to design, build, and optimize solutions from
         scratch using code is something that truly excites me. Programming
         allows me to combine logical thinking with imagination, enabling me to
         approach problems in unique and innovative ways, and this is exactly
@@ -69,7 +69,7 @@ const About = () => {
         In general, I believe that Computer Science is a discipline that blends
         creativity, logic, and continuous learning. It offers endless
         possibilities to design innovative applications, solve complex problems,
-        and explore new technologies. Whether it’s developing web and mobile
+        and explore new technologies. Whether it's developing web and mobile
         applications, experimenting with game design, or mastering the latest
         frameworks and tools, I am motivated by the idea of constantly improving
         my skills and applying them in practical, impactful ways. The
