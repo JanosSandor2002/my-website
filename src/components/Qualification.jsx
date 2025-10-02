@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Qualification.css';
-import { technologies } from '../datas/projects';
+import { technologies } from '../data/projects';
 const Qualification = () => {
   return (
     <div className='qualities' id='qualifications'>

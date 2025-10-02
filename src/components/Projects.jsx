@@ -1,6 +1,6 @@
 import React from 'react';
-import { websites } from '../datas/projects';
-import { university } from '../datas/projects';
+import { websites } from '../data/projects';
+import { university } from '../data/projects';
 import '../styles/Projects.css';
 
 const Projects = () => {
