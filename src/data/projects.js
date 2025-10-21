@@ -3,6 +3,7 @@ import xfactor_img from '../images/xfactor.png';
 import movingshop_img from '../images/movingshop.png';
 import szakgyak_img from '../images/office.png';
 import bsc_img from '../images/bsc.png';
+import webtechassignment_img from '../images/webtechassignment_img.png';
 
 export const websites = [
   {
@@ -32,7 +33,7 @@ export const websites = [
   {
     id: 4,
     project_name: 'Web Technologies Assignment',
-    project_img: movingshop_img,
+    project_img: webtechassignment_img,
     link: 'https://janossandor2002.github.io/frontend-practicing/',
     project_details:
       'Assignment website for Web Technologies 1 subject made in 2026/1. semester',
