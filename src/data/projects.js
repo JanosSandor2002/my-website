@@ -23,11 +23,19 @@ export const websites = [
   },
   {
     id: 3,
-    project_name: 'Mozgóbolt Template',
+    project_name: 'Moving-Shop Template',
     project_img: movingshop_img,
     link: 'https://janossandor2002.github.io/moving-shop-website/',
     project_details:
       'Template website for a moving shop with some functions such as raffle.',
+  },
+  {
+    id: 4,
+    project_name: 'Web Technologies Assignment',
+    project_img: movingshop_img,
+    link: 'https://janossandor2002.github.io/frontend-practicing/',
+    project_details:
+      'Assignment website for Web Technologies 1 subject made in 2026/1. semester',
   },
 ];
 export const university = [
