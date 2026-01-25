@@ -4,7 +4,12 @@ import movingshop_img from '../images/movingshop.png';
 import szakgyak_img from '../images/office.png';
 import bsc_img from '../images/bsc.png';
 import webtechassignment_img from '../images/webtechassignment_img.png';
-
+import profilePic from '../images/self.jpeg';
+export const info = {
+  pic: profilePic,
+  name: 'János Sándor',
+  job: 'Web Developer',
+};
 export const websites = [
   {
     id: 1,

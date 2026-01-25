@@ -1,7 +1,6 @@
 import React from 'react';
 import { websites } from '../data/projects';
 import { university } from '../data/projects';
-import '../styles/Projects.css';
 
 const Projects = () => {
   return (
@@ -21,7 +20,7 @@ const Projects = () => {
                 <p>{project_details}</p>
               </a>
             </div>
-          )
+          ),
         )}
       </div>
       <h1 className='hh'>University & Professional Projects</h1>
@@ -39,7 +38,7 @@ const Projects = () => {
                 <p>{project_details}</p>
               </a>
             </div>
-          )
+          ),
         )}
       </div>
     </div>

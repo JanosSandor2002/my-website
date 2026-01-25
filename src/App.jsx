@@ -18,9 +18,3 @@ const App = () => {
 };
 
 export default App;
-
-/*<Navbar />
-      <Projects />
-      <About />
-      <Qualification />
-      <Footer /> */

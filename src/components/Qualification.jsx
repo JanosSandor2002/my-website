@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Qualification.css';
 import { technologies } from '../data/projects';
 const Qualification = () => {
   return (

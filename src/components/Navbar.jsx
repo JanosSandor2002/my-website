@@ -1,6 +1,5 @@
 import React from 'react';
 import selfPic from '../images/self.jpeg';
-import '../styles/Navbar.css';
 import Navicons from './Navicons';
 const Navbar = () => {
   return (
