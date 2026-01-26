@@ -5,11 +5,62 @@ import szakgyak_img from '../images/office.png';
 import bsc_img from '../images/bsc.png';
 import webtechassignment_img from '../images/webtechassignment_img.png';
 import profilePic from '../images/self.jpeg';
+import { MdAlternateEmail } from 'react-icons/md';
+import { FaSquarePhone } from 'react-icons/fa6';
+import { FaBirthdayCake } from 'react-icons/fa';
+import facebookImage from '../images/facebook.png';
+import linkedinImage from '../images/linkedin.png';
+import gmailImage from '../images/gmail.png';
+import phoneImage from '../images/phone.png';
+import githubImage from '../images/github.png';
 export const info = {
   pic: profilePic,
   name: 'János Sándor',
   job: 'Web Developer',
 };
+export const contacts = [
+  {
+    id: 1,
+    icon: <MdAlternateEmail />,
+    name: 'E-mail',
+    value: 'sandorj2002@gmail.com',
+    href: 'mailto:sandorj2002@gmail.com',
+  },
+  {
+    id: 2,
+    icon: <FaSquarePhone />,
+    name: 'Phone Number',
+    value: '+36301116731',
+    href: 'tel:+36301116731',
+  },
+  {
+    id: 3,
+    icon: <FaBirthdayCake />,
+    name: 'Born',
+    value: '2002.11.19',
+  },
+];
+export const socials = [
+  {
+    id: 1,
+    href: 'https://www.facebook.com/jancsii.sandor',
+    img: facebookImage,
+    alt: 'Facebook',
+  },
+  {
+    id: 2,
+    href: 'https://www.linkedin.com/in/j%C3%A1nos-s%C3%A1ndor-77a0b7386/',
+    img: linkedinImage,
+    alt: 'LinkedIn',
+  },
+  {
+    id: 3,
+    href: 'https://github.com/JanosSandor2002',
+    img: githubImage,
+    alt: 'GitHub',
+  },
+];
+
 export const websites = [
   {
     id: 1,

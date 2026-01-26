@@ -56,7 +56,6 @@ a {
   font-weight: bold;
   text-decoration-line: none;
   color: var(--third-color);
-  margin: auto 30px;
 }
 h1,
 h2,
@@ -106,11 +105,55 @@ main {
 }
 /*----------------------------------------------------- 4. Components -----------------------------------------------------*/
 .hero-image {
-  height: 200px;
-  width: 200px;
+  border: var(--border-width) solid var(--secondary-color);
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
 }
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacts {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-icon-container svg {
+  height: 40px;
+  width: 40px;
+  color: var(--secondary-color);
+}
+.social-container {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+}
+.social-container a img {
+  color: var(--secondary-color);
+  filter: invert(85%) sepia(16%) saturate(469%) hue-rotate(161deg)
+    brightness(96%) contrast(93%);
+  height: 40px;
+  width: 40px;
+}
 /*----------------------------------------------------- 5. Utilities -----------------------------------------------------*/
+/*---------------------------- span ----------------------------*/
+.underline {
+  display: block;
+  width: 200px;
+  height: 1px;
+  background-color: var(--secondary-color);
+}
+
 /*---------------------------- flex ----------------------------*/
 .flex-clm {
   flex-direction: column;
