@@ -4,14 +4,12 @@ import movingshop_img from '../images/movingshop.png';
 import szakgyak_img from '../images/office.png';
 import bsc_img from '../images/bsc.png';
 import webtechassignment_img from '../images/webtechassignment_img.png';
-import profilePic from '../images/self.jpeg';
+import profilePic from '../images/self.png';
 import { MdAlternateEmail } from 'react-icons/md';
 import { FaSquarePhone } from 'react-icons/fa6';
 import { FaBirthdayCake } from 'react-icons/fa';
 import facebookImage from '../images/facebook.png';
 import linkedinImage from '../images/linkedin.png';
-import gmailImage from '../images/gmail.png';
-import phoneImage from '../images/phone.png';
 import githubImage from '../images/github.png';
 export const info = {
   pic: profilePic,

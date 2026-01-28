@@ -77,6 +77,12 @@ main {
   height: 1000px;
   width: 1100px;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
 #leftside {
   padding: 10px;
   border-radius: var(--border-radius);
@@ -145,15 +151,57 @@ main {
   height: 40px;
   width: 40px;
 }
+.nav-container {
+  height: 50px;
+  width: 400px;
+  border-radius: var(--border-radius);
+  border: var(--border-width) solid var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.nav-icons {
+  height: 50px;
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.nav-icons button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+}
+.nav-icons svg {
+  background-color: var(--fill-color);
+  color: var(--secondary-color);
+  height: 40px;
+  width: 40px;
+}
+.nav-icons svg:hover {
+  scale: 1.1;
+  color: var(--primary-color);
+}
+.nav-text {
+  display: none;
+}
 /*----------------------------------------------------- 5. Utilities -----------------------------------------------------*/
-/*---------------------------- span ----------------------------*/
+/*---------------------------- utils ----------------------------*/
 .underline {
   display: block;
   width: 200px;
   height: 1px;
   background-color: var(--secondary-color);
 }
-
+.show-nav {
+  height: 100px;
+}
+.show-nav-text {
+  display: flex;
+}
 /*---------------------------- flex ----------------------------*/
 .flex-clm {
   flex-direction: column;
