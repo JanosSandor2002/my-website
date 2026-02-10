@@ -85,6 +85,8 @@ header {
   height: 100px;
 }
 #leftside {
+  position: sticky;
+  top: 20px;
   padding: 10px;
   border-radius: var(--border-radius);
   border: var(--border-width) solid var(--secondary-color);
@@ -98,6 +100,8 @@ header {
   align-items: center;
 }
 #rightside {
+  position: sticky;
+  bottom: 20px;
   padding: 10px;
   border-radius: var(--border-radius);
   border: var(--border-width) solid var(--secondary-color);
@@ -161,6 +165,8 @@ header {
   flex-direction: column;
   justify-content: space-evenly;
   gap: 10px;
+  overflow: hidden;
+  transition: height 0.1s ease;
 }
 .nav-icons {
   height: 50px;
