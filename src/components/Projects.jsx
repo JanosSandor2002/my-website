@@ -3,11 +3,11 @@ import { websites, university } from '../data/data';
 
 const Projects = () => {
   return (
-    <section id='projects' className='projects-page'>
-      <h2>Webes projektjeim</h2>
+    <section id='projektek' className='projects-page'>
+
+      <h2>Webes projektek</h2>
       <p className='projects-intro'>
-        A legfrissebb munkaim, ahol frontend, UI es interakcio tervezes kapja a
-        fo hangsulyt.
+        Legfrissebb munkáim, ahol a frontend, a UI-tervezés és az interakció kapja a fő hangsúlyt.
       </p>
       <div className='project-grid'>
         {websites.map(({ id, project_name, project_img, project_details, link }) => (
@@ -25,10 +25,10 @@ const Projects = () => {
         ))}
       </div>
 
-      <h2>Egyetemi es szakmai projektek</h2>
+      <h2>Egyetemi és szakmai projektek</h2>
       <p className='projects-intro'>
-        Olyan munkak, amelyekben csapatmunka, komplexebb architektura es
-        dokumentacio is fontos szerepet kapott.
+        Olyan munkák, amelyekben a csapatmunka, a komplexebb architektúra és a dokumentáció
+        is fontos szerepet kapott.
       </p>
       <div className='project-grid'>
         {university.map(({ id, project_name, project_img, project_details, link }) => (
@@ -45,6 +45,7 @@ const Projects = () => {
           </article>
         ))}
       </div>
+
     </section>
   );
 };

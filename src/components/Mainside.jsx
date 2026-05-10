@@ -1,19 +1,29 @@
-import React from 'react';
+// ./components/Mainside.jsx
+import React, { useRef, useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 
 const Mainside = () => {
   const { pathname } = useLocation();
+  const mainRef = useRef(null);
+
+  // FIX: oldalváltáskor scroll vissza a tetejére
+  useEffect(() => {
+    if (mainRef.current) {
+      mainRef.current.scrollTop = 0;
+    }
+  }, [pathname]);
+
   const titleByPath = {
-    '/': 'MainMenu',
-    '/projects': 'Projects',
-    '/qualification': 'Studies',
-    '/contact': 'Contact',
+    '/':              'Főoldal',
+    '/projects':      'Projektek',
+    '/qualification': 'Tanulmányok',
+    '/contact':       'Rólam',
   };
 
   return (
-    <main>
+    <main ref={mainRef}>
       <header>
-        <h1>{titleByPath[pathname] ?? 'MainMenu'}</h1>
+        <h1>{titleByPath[pathname] ?? 'Főoldal'}</h1>
       </header>
       <Outlet />
     </main>
