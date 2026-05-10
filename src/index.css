@@ -24,6 +24,25 @@ html,
 body {
   font-family: var(--font-family);
   background-color: var(--background-color);
+  background-image:
+    radial-gradient(1200px 900px at 15% 10%, rgba(24, 200, 253, 0.24), rgba(24, 200, 253, 0) 65%),
+    radial-gradient(950px 760px at 88% 18%, rgba(5, 106, 173, 0.35), rgba(5, 106, 173, 0) 62%),
+    radial-gradient(900px 760px at 72% 82%, rgba(168, 218, 220, 0.18), rgba(168, 218, 220, 0) 60%),
+    repeating-radial-gradient(
+      circle at 30% 40%,
+      rgba(24, 200, 253, 0.1) 0 2px,
+      rgba(3, 23, 29, 0) 2px 14px,
+      rgba(168, 218, 220, 0.08) 14px 16px,
+      rgba(3, 23, 29, 0) 16px 32px
+    ),
+    repeating-conic-gradient(
+      from 0deg at 62% 56%,
+      rgba(24, 200, 253, 0.08) 0deg 14deg,
+      rgba(3, 23, 29, 0) 14deg 28deg,
+      rgba(5, 106, 173, 0.08) 28deg 42deg,
+      rgba(3, 23, 29, 0) 42deg 56deg
+    );
+  background-attachment: fixed;
   color: var(--primary-color);
   font-size: var(--base-font-size);
   line-height: var(--line-height);
@@ -31,9 +50,8 @@ body {
   min-height: 100vh;
 }
 .container {
-  background-color: purple;
   font-family: var(--font-family);
-  background-color: var(--background-color);
+  background-color: transparent;
   color: var(--primary-color);
   font-size: var(--base-font-size);
   line-height: var(--line-height);
@@ -41,8 +59,18 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 30px;
+  position: relative;
+}
+.right-column {
+  position: sticky;
+  top: 20px;
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-start;
 }
 #root {
   display: flex;
@@ -101,15 +129,14 @@ header {
   align-items: center;
 }
 #rightside {
-  position: sticky;
-  bottom: 20px;
+  position: static;
   padding: 10px;
   border-radius: var(--border-radius);
   border: var(--border-width) solid var(--secondary-color);
   background-color: var(--fill-color);
   height: 500px;
   width: 300px;
-  align-self: flex-end;
+  align-self: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -165,10 +192,70 @@ header {
   border: var(--border-width) solid var(--secondary-color);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  align-items: center;
   gap: 10px;
   overflow: hidden;
   transition: height 0.1s ease;
+}
+.nav-container-expanded {
+  height: 100px;
+}
+.right-nav-icons {
+  position: static;
+  align-self: flex-start;
+  width: 90px;
+  height: auto;
+  background-color: var(--fill-color);
+  transition: width 0.2s ease;
+}
+.right-nav-icons-expanded {
+  width: 300px;
+}
+.right-nav-icons .nav-icons {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+}
+.right-nav-item {
+  width: 100%;
+  height: 60px;
+  padding: 0 14px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.right-nav-item svg {
+  flex-shrink: 0;
+}
+.right-nav-label {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: absolute;
+  left: 16px;
+  display: block;
+  opacity: 0;
+  max-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: opacity 0.15s ease, max-width 0.2s ease;
+}
+.right-nav-icons-expanded .right-nav-item {
+  justify-content: flex-end;
+  transform: translateX(-10px);
+}
+.right-nav-icons .nav-icons .right-nav-item {
+  width: 100%;
+}
+.right-nav-icons-expanded .right-nav-label {
+  opacity: 1;
+  max-width: 220px;
 }
 .nav-icons {
   height: 50px;
@@ -183,20 +270,31 @@ header {
   outline: none;
   box-shadow: none;
   padding: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 .nav-icons svg {
-  background-color: var(--fill-color);
+  background-color: transparent;
   color: var(--secondary-color);
   height: 40px;
   width: 40px;
+  transform: translateY(-2px);
 }
-.nav-icons svg:hover {
-  height: 60px;
-  width: 60px;
-  color: var(--primary-color);
+.nav-icons button:nth-child(2) svg {
+  height: 36px;
+  width: 36px;
 }
 .nav-text {
   display: none;
+}
+.nav-text-visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*----------------------------------------------------- 5. Utilities -----------------------------------------------------*/
 /*---------------------------- utils ----------------------------*/
@@ -206,15 +304,162 @@ header {
   height: 1px;
   background-color: var(--secondary-color);
 }
-.show-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 100%;
-  height: 100px;
-}
 .set-text {
   font-size: 1.5rem;
+}
+
+.landing-page,
+.projects-page,
+.qualification-page {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 14px 10px 20px;
+}
+
+.landing-hero {
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(168, 218, 220, 0.45);
+  background: linear-gradient(145deg, rgba(24, 200, 253, 0.2), rgba(3, 23, 29, 0.9));
+}
+
+.landing-tag {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+
+.landing-subtitle,
+.projects-intro {
+  color: #d2f3f6;
+}
+
+.landing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.landing-grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.landing-card,
+.qualification-item {
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid rgba(168, 218, 220, 0.35);
+  background-color: rgba(3, 23, 29, 0.85);
+}
+.landing-card-highlight {
+  background: linear-gradient(160deg, rgba(24, 200, 253, 0.22), rgba(3, 23, 29, 0.88));
+}
+
+.landing-card h3,
+.project-content h3,
+.qualification-item h3 {
+  color: var(--third-color);
+  margin-bottom: 8px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.project-item {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(168, 218, 220, 0.35);
+  background-color: rgba(3, 23, 29, 0.85);
+}
+
+.project-item img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-content {
+  padding: 14px;
+}
+
+.qualification-timeline {
+  display: grid;
+  gap: 14px;
+}
+
+.landing-showcase {
+  border-radius: 16px;
+  border: 1px solid rgba(168, 218, 220, 0.45);
+  background-color: rgba(3, 23, 29, 0.86);
+  padding: 18px;
+  display: grid;
+  gap: 16px;
+}
+
+.showcase-head p {
+  color: #d2f3f6;
+}
+
+.showcase-carousel {
+  display: grid;
+  grid-template-columns: 50px 1fr 1.35fr 1fr 50px;
+  gap: 12px;
+  align-items: center;
+}
+
+.showcase-nav-btn {
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(168, 218, 220, 0.4);
+  background-color: rgba(24, 200, 253, 0.12);
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.showcase-card {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(168, 218, 220, 0.35);
+  background-color: rgba(3, 23, 29, 0.8);
+}
+
+.showcase-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.showcase-card h4 {
+  color: var(--third-color);
+  padding: 10px 12px 0;
+}
+
+.showcase-card p {
+  padding: 8px 12px 12px;
+  color: #d2f3f6;
+}
+
+.showcase-card-side {
+  opacity: 0.75;
+  cursor: pointer;
+  transform: scale(0.94);
+}
+
+.showcase-card-active {
+  border-color: rgba(24, 200, 253, 0.55);
+  box-shadow: 0 0 22px rgba(24, 200, 253, 0.16);
+}
+
+.showcase-link {
+  display: block;
 }
 /*------------3---------------- flex ----------------------------*/
 .flex-clm {
