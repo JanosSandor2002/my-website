@@ -1,48 +1,52 @@
 import React from 'react';
-import { websites } from '../data/projects';
-import { university } from '../data/projects';
-import '../styles/Projects.css';
+import { websites, university } from '../data/data';
 
 const Projects = () => {
   return (
-    <div id='projects'>
-      <h1 className='hh'>Websites Projects</h1>
-      <div className='project'>
-        {websites.map(
-          ({ id, project_name, project_img, project_details, link }) => (
-            <div className='project-item' key={id}>
+    <section id='projektek' className='projects-page'>
+
+      <h2>Webes projektek</h2>
+      <p className='projects-intro'>
+        Legfrissebb munkáim, ahol a frontend, a UI-tervezés és az interakció kapja a fő hangsúlyt.
+      </p>
+      <div className='project-grid'>
+        {websites.map(({ id, project_name, project_img, project_details, link }) => (
+          <article className='project-item' key={id}>
+            <a href={link} target='_blank' rel='noopener noreferrer'>
+              <img src={project_img} alt={project_name} />
+            </a>
+            <div className='project-content'>
               <a href={link} target='_blank' rel='noopener noreferrer'>
-                <h1>{project_name}</h1>
+                <h3>{project_name}</h3>
               </a>
-              <a href={link} target='_blank' rel='noopener noreferrer'>
-                <img src={project_img} alt='picture' />
-              </a>
-              <a href={link} target='_blank' rel='noopener noreferrer'>
-                <p>{project_details}</p>
-              </a>
+              <p>{project_details}</p>
             </div>
-          )
-        )}
+          </article>
+        ))}
       </div>
-      <h1 className='hh'>University & Professional Projects</h1>
-      <div className='project'>
-        {university.map(
-          ({ id, project_name, project_img, project_details, link }) => (
-            <div className='project-item' key={id}>
+
+      <h2>Egyetemi és szakmai projektek</h2>
+      <p className='projects-intro'>
+        Olyan munkák, amelyekben a csapatmunka, a komplexebb architektúra és a dokumentáció
+        is fontos szerepet kapott.
+      </p>
+      <div className='project-grid'>
+        {university.map(({ id, project_name, project_img, project_details, link }) => (
+          <article className='project-item' key={id}>
+            <a href={link} target='_blank' rel='noopener noreferrer'>
+              <img src={project_img} alt={project_name} />
+            </a>
+            <div className='project-content'>
               <a href={link} target='_blank' rel='noopener noreferrer'>
-                <h1>{project_name}</h1>
+                <h3>{project_name}</h3>
               </a>
-              <a href={link} target='_blank' rel='noopener noreferrer'>
-                <img src={project_img} alt='picture' />
-              </a>
-              <a href={link} target='_blank' rel='noopener noreferrer'>
-                <p>{project_details}</p>
-              </a>
+              <p>{project_details}</p>
             </div>
-          )
-        )}
+          </article>
+        ))}
       </div>
-    </div>
+
+    </section>
   );
 };
 
