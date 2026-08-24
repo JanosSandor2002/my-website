@@ -1,22 +1,23 @@
-# 1. LÉPÉS: Build
+# 1. LÉPÉS: Build folyamat
 FROM node:22-alpine AS build
 
 WORKDIR /app
 
-# A frontend mappa tartalmát másoljuk a konténerbe
+# Függőségek másolása és telepítése
 COPY package*.json ./
 RUN npm ci
 
+# Teljes forráskód másolása és a gyártási változat felépítése
 COPY . .
 RUN npm run build
 
 # 2. LÉPÉS: Kiszolgálás Nginx-szel
 FROM nginx:alpine
 
-# A beépített dist mappa tartalmát másoljuk az Nginx alá
-COPY --from=build /app/dist /usr/share/nginx/html
+# A Vite 'base' beállítása miatt egy 'my-website' nevű almappába rakjuk a fájlokat
+COPY --from=build /app/dist /usr/share/nginx/html/my-website
 
-# Az egyedi Nginx konfiguráció
+# Az egyedi Nginx konfiguráció bemásolása
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
