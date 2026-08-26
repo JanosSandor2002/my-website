@@ -4,6 +4,7 @@ import movingshop_img from '../images/movingshop.png';
 import szakgyak_img from '../images/office.png';
 import bsc_img from '../images/bsc.png';
 import webtechassignment_img from '../images/webtechassignment_img.png';
+import webtechassignment2_img from '../images/webtechassignment2_img.png';
 import profilePic from '../images/self.jpg';
 import { MdAlternateEmail } from 'react-icons/md';
 import { FaSquarePhone } from 'react-icons/fa6';
@@ -89,11 +90,19 @@ export const websites = [
   },
   {
     id: 4,
-    project_name: 'Webtechnológiák Beadandó',
+    project_name: 'Webtechnológiák 1. Beadandó',
     project_img: webtechassignment_img,
     link: 'https://janossandor2002.github.io/frontend-practicing/',
     project_details:
       'A Webtechnológiák 1 tantárgy beadandó feladata a 2025/26-os tanév első szemeszterében.',
+  },
+  {
+    id: 5,
+    project_name: 'Webtechnológiák 2. Beadandó',
+    project_img: webtechassignment2_img,
+    link: 'https://github.com/JanosSandor2002/next-project-web-technologies-2',
+    project_details:
+      'A Webtechnológiák 2 tantárgy beadandó feladata a 2025/26-os tanév második szemeszterében.',
   },
 ];
 
