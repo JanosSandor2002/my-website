@@ -100,7 +100,7 @@ export const websites = [
     id: 5,
     project_name: 'Webtechnológiák 2. Beadandó',
     project_img: webtechassignment2_img,
-    link: 'https://github.com/JanosSandor2002/next-project-web-technologies-2',
+    link: 'https://github.com/JanosSandor2002/web-technologies-2-next-project',
     project_details:
       'A Webtechnológiák 2 tantárgy beadandó feladata a 2025/26-os tanév második szemeszterében.',
   },
