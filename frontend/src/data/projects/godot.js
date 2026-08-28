@@ -8,7 +8,8 @@ export const godot_projects = [
     project_img: basic_rpg_img,
     link: 'https://github.com/JanosSandor2002/basic-rpg-game-godot/',
     website: '',
-    project_details: 'idk',
+    project_details:
+      'Egyszerű 2D RPG alapmechanikákkal — karaktermozgás, párbeszédrendszer és térképváltás Godot Engine-ben.',
     type: 'open',
   },
   {
@@ -17,7 +18,8 @@ export const godot_projects = [
     project_img: horrifice_img,
     link: '',
     website: '',
-    project_details: 'idk',
+    project_details:
+      'Atmoszférikus horror játék fejlesztése Godot alatt, fókuszban a feszültségkeltés és az interaktív pályatervezés',
     type: 'closed',
   },
 ];

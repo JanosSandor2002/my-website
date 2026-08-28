@@ -9,7 +9,8 @@ export const practice_projects = [
     project_img: backend_img,
     link: 'https://github.com/JanosSandor2002/backend-practicing/',
     website: '',
-    project_details: 'idk',
+    project_details:
+      'Node.js, Express és Spring Boot alapú gyakorló API-k, REST végpontok és adatbázis-kapcsolat tesztelésére.',
     type: 'open',
   },
   {
@@ -18,7 +19,8 @@ export const practice_projects = [
     project_img: frontend_img,
     link: 'https://github.com/JanosSandor2002/frontend-practicing/',
     website: '',
-    project_details: 'idk',
+    project_details:
+      'React komponensek és állapotkezelési minták gyakorlása kisebb UI feladatokon keresztül.',
     type: 'open',
   },
   {
@@ -27,7 +29,8 @@ export const practice_projects = [
     project_img: game_practice_img,
     link: 'https://github.com/JanosSandor2002/udemy-learn-rpg/',
     website: '',
-    project_details: 'idk',
+    project_details:
+      'Udemy kurzus alapján készült gyakorló RPG projekt Godot-ban, alapvető játékmechanikák elsajátítására.',
     type: 'open',
   },
 ];

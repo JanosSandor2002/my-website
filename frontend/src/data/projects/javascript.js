@@ -10,7 +10,8 @@ export const javascript_projects = [
     project_img: backroads_img,
     link: 'https://github.com/JanosSandor2002/backroads-project/',
     website: 'https://janossandor2002.github.io/backroads-project/',
-    project_details: 'idk',
+    project_details:
+      'Reszponzív, útiterv-jellegű bemutatóoldal tiszta JavaScript és CSS animációkkal.',
     type: 'open',
   },
   {
@@ -19,7 +20,8 @@ export const javascript_projects = [
     project_img: movingshop_img,
     link: 'https://github.com/JanosSandor2002/moving-shop-website/',
     website: 'https://janossandor2002.github.io/moving-shop-website/',
-    project_details: 'idk',
+    project_details:
+      'Egyszerű webshop-koncepció kosárkezeléssel és dinamikus terméklistázással.',
     type: 'open',
   },
   {
@@ -28,7 +30,8 @@ export const javascript_projects = [
     project_img: xfactor_img,
     link: 'https://github.com/JanosSandor2002/xfactor-mentor-quiz-project/',
     website: 'https://janossandor2002.github.io/xfactor-mentor-quiz-project/',
-    project_details: 'idk',
+    project_details:
+      'Interaktív kvíz alkalmazás pontszámítással és több kérdéskörrel.',
     type: 'open',
   },
   {
@@ -37,7 +40,8 @@ export const javascript_projects = [
     project_img: idopontfoglalo_img,
     link: '',
     website: '',
-    project_details: 'idk',
+    project_details:
+      'Next.js frontend és Nest.js/MongoDB backend alapú szalon-időpontfoglaló platform korai fejlesztési fázisban.',
     type: 'closed',
   },
 ];

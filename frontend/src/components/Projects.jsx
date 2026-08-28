@@ -8,9 +8,24 @@ import { practice_projects } from '../data/projects/practice';
 const ProjectGrid = ({ items }) => (
   <div className='project-grid'>
     {items.map(
-      ({ id, project_name, project_img, project_details, link, website }) => (
+      ({
+        id,
+        project_name,
+        project_img,
+        project_details,
+        link,
+        website,
+        type,
+      }) => (
         <article className='project-item' key={id}>
-          <img src={project_img} alt={project_name} />
+          <div className='project-img-wrap'>
+            <img src={project_img} alt={project_name} />
+            {type === 'closed' && (
+              <span className='project-badge project-badge-private'>
+                Privát
+              </span>
+            )}
+          </div>
           <div className='project-content'>
             <h3>{project_name}</h3>
             <p>{project_details}</p>

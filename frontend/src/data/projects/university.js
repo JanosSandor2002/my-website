@@ -12,7 +12,8 @@ export const university_projects = [
     project_img: softvare_technology,
     link: 'https://szsolt0.github.io/swtech/',
     website: '',
-    project_details: 'idk',
+    project_details:
+      'Csapatmunkában készült szoftverfejlesztési dokumentáció, tervezési és folyamatleírásokkal.',
     type: 'open',
   },
   {
@@ -21,7 +22,8 @@ export const university_projects = [
     project_img: szakgyak_img,
     link: 'https://github.com/JanosSandor2002/szakmai-gyakorlat/',
     website: 'https://janossandor2002.github.io/szakmai-gyakorlat/',
-    project_details: 'idk',
+    project_details:
+      'A szakmai gyakorlat során fejlesztett alkalmazás, valós projektkövetelmények alapján.',
     type: 'open',
   },
   {
@@ -30,7 +32,8 @@ export const university_projects = [
     project_img: webtechassignment_img,
     link: 'https://github.com/JanosSandor2002/web-technologies-1-website/',
     website: 'https://janossandor2002.github.io/web-technologies-1-website/',
-    project_details: 'idk',
+    project_details:
+      'Alapszintű webfejlesztési beadandó HTML, CSS és JavaScript technológiákkal.',
     type: 'open',
   },
   {
@@ -39,7 +42,8 @@ export const university_projects = [
     project_img: webtechassignment2_img,
     link: 'https://github.com/JanosSandor2002/web-technologies-2-next-project',
     website: '',
-    project_details: 'idk',
+    project_details:
+      'Haladóbb webes beadandó Next.js keretrendszer használatával.',
     type: 'open',
   },
   {
@@ -48,7 +52,8 @@ export const university_projects = [
     project_img: bsc_img,
     link: 'https://github.com/JanosSandor2002/bsc-degree-project',
     website: '',
-    project_details: 'idk',
+    project_details:
+      'Teljes körű projektmenedzsment szoftver React, React Native és Express.js technológiákkal, a BSc szakdolgozat keretében.',
     type: 'open',
   },
   {
@@ -57,7 +62,8 @@ export const university_projects = [
     project_img: parallel_img,
     link: 'https://github.com/JanosSandor2002/parallel-devices-programming',
     website: '',
-    project_details: 'idk',
+    project_details:
+      'Párhuzamos és elosztott algoritmusok implementálása egyetemi kurzusi feladat részeként.',
     type: 'open',
   },
 ];

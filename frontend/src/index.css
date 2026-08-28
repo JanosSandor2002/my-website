@@ -883,6 +883,30 @@ header h1 {
   transform: scale(1.04);
 }
 
+.project-img-wrap {
+  position: relative;
+}
+
+.project-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  backdrop-filter: blur(6px);
+}
+
+.project-badge-private {
+  background: rgba(0, 0, 0, 0.55);
+  color: rgba(232, 244, 248, 0.85);
+  border: 1px solid rgba(232, 244, 248, 0.25);
+}
+
 .project-content {
   padding: 14px 16px 16px;
 }
@@ -1439,7 +1463,22 @@ header h1 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 1120px) {
+  #leftside {
+    width: 240px;
+  }
+  .showcase-carousel {
+    grid-template-columns: 36px 1fr 1.3fr 1fr 36px;
+  }
 
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-btn {
+    width: 100%;
+  }
+}
 @media (max-width: 1060px) {
   #leftside {
     width: 240px;
@@ -1506,17 +1545,6 @@ header h1 {
     display: none;
   }
 }
-/* ==========================================================================
-   ÚJ BLOKK — illeszd az index.css LEGVÉGÉRE.
-   (A @import-ot NE ide tedd — azt a fájl legelső sorába kell cserélni,
-   lásd a chat üzenetet. @import csak a CSS fájl elején érvényes.)
-   ========================================================================== */
-
-/* --------------------------------------------------------------------------
-   A) RIGHTSIDE — terminál státusz-kártya
-   A #rightside-ból eltávolítjuk a placeholder-keretet (dupla kártya
-   elkerülése), és a .term-card adja a tényleges vizuális egységet.
-   -------------------------------------------------------------------------- */
 
 #rightside {
   background: none;
@@ -1833,6 +1861,14 @@ header h1 {
 
   #rightside {
     width: min(100%, 420px);
+  }
+  /* B4) Projekt gombok: mobilon egymás alatt, teljes szélességben */
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-btn {
+    width: 100%;
   }
 }
 

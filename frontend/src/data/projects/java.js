@@ -7,7 +7,8 @@ export const java_projects = [
     project_img: idopontfoglalo_img,
     link: 'https://github.com/JanosSandor2002/saas-idopontfoglalo-java/',
     website: '',
-    project_details: 'idk',
+    project_details:
+      'Spring Boot alapú időpontfoglaló rendszer szolgáltatóknak és ügyfeleknek, backend-fókuszú architektúrával.',
     type: 'open',
   },
 ];
