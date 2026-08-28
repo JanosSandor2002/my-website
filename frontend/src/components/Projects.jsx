@@ -7,19 +7,42 @@ import { practice_projects } from '../data/projects/practice';
 
 const ProjectGrid = ({ items }) => (
   <div className='project-grid'>
-    {items.map(({ id, project_name, project_img, project_details, link }) => (
-      <article className='project-item' key={id}>
-        <a href={link} target='_blank' rel='noopener noreferrer'>
+    {items.map(
+      ({ id, project_name, project_img, project_details, link, website }) => (
+        <article className='project-item' key={id}>
           <img src={project_img} alt={project_name} />
-        </a>
-        <div className='project-content'>
-          <a href={link} target='_blank' rel='noopener noreferrer'>
+          <div className='project-content'>
             <h3>{project_name}</h3>
-          </a>
-          <p>{project_details}</p>
-        </div>
-      </article>
-    ))}
+            <p>{project_details}</p>
+
+            {(link || website) && (
+              <div className='project-links'>
+                {link && (
+                  <a
+                    href={link}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='project-btn project-btn-source'
+                  >
+                    Forráskód
+                  </a>
+                )}
+                {website && (
+                  <a
+                    href={website}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='project-btn project-btn-website'
+                  >
+                    Weboldal
+                  </a>
+                )}
+              </div>
+            )}
+          </div>
+        </article>
+      ),
+    )}
   </div>
 );
 
