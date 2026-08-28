@@ -1,13 +1,13 @@
 import React from 'react';
-import { technologies } from '../data/data';
+import { technologies } from '../data/technologies';
 
 const levelToPercent = {
   Tanulandó: 5,
-  Kezdő:     25,
-  Junior:    45,
-  Haladó:    68,
-  Medior:    82,
-  Senior:    95,
+  Kezdő: 25,
+  Junior: 45,
+  Haladó: 68,
+  Medior: 82,
+  Senior: 95,
 };
 
 const TechSection = ({ title, subtitle, items }) => (
@@ -36,18 +36,17 @@ const TechSection = ({ title, subtitle, items }) => (
 const Qualification = () => {
   return (
     <section className='qualification-page' id='kepesitesek'>
-
       <h2>Tanulmányok és célok</h2>
 
       <div className='qualification-timeline'>
-
         <article className='qualification-item'>
           <div className='qual-date'>2021 – 2025</div>
           <h3>Miskolci Egyetem – BSc, Programtervező Informatikus</h3>
           <p>
-            Az alapképzésen szilárd alapokat szereztem algoritmusok, szoftverfejlesztés
-            és webtechnológiák terén. A szakdolgozat React, React Native és Express.js
-            technológiákkal készült, teljes körű projektmenedzsment szoftverként.
+            Az alapképzésen szilárd alapokat szereztem algoritmusok,
+            szoftverfejlesztés és webtechnológiák terén. A szakdolgozat React,
+            React Native és Express.js technológiákkal készült, teljes körű
+            projektmenedzsment szoftverként.
           </p>
         </article>
 
@@ -55,9 +54,10 @@ const Qualification = () => {
           <div className='qual-date'>2025 –</div>
           <h3>Informatikatanár MSc</h3>
           <p>
-            Az MSc képzésen az elméleti tudást pedagógiai szemlélettel egészítem ki.
-            Célom a következő generáció felkészítése programozásra és az informatika
-            alapjaira — miközben saját szakmai fejlődésemet is folytatom.
+            Az MSc képzésen az elméleti tudást pedagógiai szemlélettel egészítem
+            ki. Célom a következő generáció felkészítése programozásra és az
+            informatika alapjaira — miközben saját szakmai fejlődésemet is
+            folytatom.
           </p>
         </article>
 
@@ -66,7 +66,8 @@ const Qualification = () => {
           <h3>Játékfejlesztés – Godot Engine</h3>
           <p>
             Szabadidőmben játékfejlesztéssel foglalkozom. A Godot Engine-ben
-            játékmechanikákat és interaktív rendszereket tervezek és valósítok meg.
+            játékmechanikákat és interaktív rendszereket tervezek és valósítok
+            meg.
           </p>
         </article>
 
@@ -74,12 +75,11 @@ const Qualification = () => {
           <div className='qual-date'>Jövőbeli terv</div>
           <h3>Matematikatanári képzés</h3>
           <p>
-            Az informatikatanári MSc után a matematikatanári képzés elvégzése a célom,
-            hogy interdiszciplináris szemlélettel oktathassak — ötvözve a logikai
-            gondolkodást és a programozást.
+            Az informatikatanári MSc után a matematikatanári képzés elvégzése a
+            célom, hogy interdiszciplináris szemlélettel oktathassak — ötvözve a
+            logikai gondolkodást és a programozást.
           </p>
         </article>
-
       </div>
 
       {/* ── Webes fejlesztői stack ── */}
@@ -119,9 +119,10 @@ const Qualification = () => {
         <div>
           <h2 style={{ marginBottom: '4px' }}>Tanári stack</h2>
           <p className='projects-intro'>
-            Korrepetálási tapasztalattal rendelkezem informatikából és matematikából
-            (ezek az elsődleges szakterületeim), valamint angol és történelem tantárgyakból.
-            Rendes tanárként még nem dolgoztam, de az MSc képzés erre is felkészít.
+            Korrepetálási tapasztalattal rendelkezem informatikából és
+            matematikából (ezek az elsődleges szakterületeim), valamint angol és
+            történelem tantárgyakból. Rendes tanárként még nem dolgoztam, de az
+            MSc képzés erre is felkészít.
           </p>
         </div>
         <div className='tech-grid'>
@@ -130,12 +131,14 @@ const Qualification = () => {
               <div className='tech-card-name'>{t.technology}</div>
               <div className='tech-card-level'>{t.level}</div>
               <div style={{ marginTop: '4px', marginBottom: '6px' }}>
-                <span style={{
-                  fontSize: '0.68rem',
-                  color: 'var(--secondary)',
-                  opacity: 0.65,
-                  fontStyle: 'italic',
-                }}>
+                <span
+                  style={{
+                    fontSize: '0.68rem',
+                    color: 'var(--secondary)',
+                    opacity: 0.65,
+                    fontStyle: 'italic',
+                  }}
+                >
                   {t.time}
                 </span>
               </div>
@@ -148,17 +151,18 @@ const Qualification = () => {
             </div>
           ))}
         </div>
-        <p style={{
-          fontSize: '0.78rem',
-          color: 'rgba(232,244,248,0.5)',
-          fontStyle: 'italic',
-          marginTop: '-4px',
-        }}>
-          * A tanári tapasztalat jelenleg korrepetálás szintű. Osztálytermi oktatási
-          tapasztalat az MSc képzés keretében fog bővülni.
+        <p
+          style={{
+            fontSize: '0.78rem',
+            color: 'rgba(232,244,248,0.5)',
+            fontStyle: 'italic',
+            marginTop: '-4px',
+          }}
+        >
+          * A tanári tapasztalat jelenleg korrepetálás szintű. Osztálytermi
+          oktatási tapasztalat az MSc képzés keretében fog bővülni.
         </p>
       </div>
-
     </section>
   );
 };

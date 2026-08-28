@@ -1,5 +1,5 @@
 import React from 'react';
-import { info, contacts, socials } from '../data/data';
+import { info, contacts, socials } from '../data/personal';
 const Leftside = () => {
   return (
     <div id='leftside'>
